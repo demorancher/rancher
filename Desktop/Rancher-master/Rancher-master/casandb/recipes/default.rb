@@ -7,7 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package 'java-1.8.0'
+package 'java-1.8.0' do
+  action: install
+end
 
 
 cookbook_file '/etc/yum.repos.d/datastax.repo' do
